@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<querylist>
+	<query name="Номенклатура">
+		<text>ВЫБРАТЬ
+	Номенклатура.Код КАК Код
+ИЗ
+	Справочник.Номенклатура КАК Номенклатура
+</text>
+	</query>
+</querylist>
