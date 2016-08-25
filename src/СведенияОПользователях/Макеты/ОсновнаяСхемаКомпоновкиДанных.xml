@@ -1,0 +1,1347 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetObject">
+			<name>ПользователиИБ</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>УникальныйИдентификатор</dataPath>
+				<field>УникальныйИдентификатор</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Уникальный идентификатор</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">UUID</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Имя</dataPath>
+				<field>Имя</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Имя (для входа)</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>100</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВходВПрограммуРазрешен</dataPath>
+				<field>ВходВПрограммуРазрешен</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Вход в программу разрешен</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>ГоризонтальноеПоложение</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">БЛ=; БИ=Да</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПоказыватьВСпискеВыбора</dataPath>
+				<field>ПоказыватьВСпискеВыбора</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Показывать в списке выбора</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>ГоризонтальноеПоложение</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">БЛ=; БИ=Да</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЗапрещеноИзменятьПароль</dataPath>
+				<field>ЗапрещеноИзменятьПароль</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Запрещено изменять пароль</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>ГоризонтальноеПоложение</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">БЛ=; БИ=Да</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПользовательОС</dataPath>
+				<field>ПользовательОС</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Пользователь ОС</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Язык</dataPath>
+				<field>Язык</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Язык</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>РежимЗапуска</dataPath>
+				<field>РежимЗапуска</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Режим запуска</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>АутентификацияСтандартная</dataPath>
+				<field>АутентификацияСтандартная</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Аутентификация стандартная</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>ГоризонтальноеПоложение</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">БЛ=; БИ=Да</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>АутентификацияОС</dataPath>
+				<field>АутентификацияОС</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Аутентификация ОС</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>ГоризонтальноеПоложение</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">БЛ=; БИ=Да</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>АутентификацияOpenID</dataPath>
+				<field>АутентификацияOpenID</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Аутентификация open ID</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>ГоризонтальноеПоложение</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">БЛ=; БИ=Да</value>
+					</item>
+				</appearance>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<objectName>ПользователиИБ</objectName>
+		</dataSet>
+		<dataSet xsi:type="DataSetQuery">
+			<name>Пользователи</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПометкаУдаления</dataPath>
+				<field>ПометкаУдаления</field>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>ГоризонтальноеПоложение</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">БЛ=; БИ=Да</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Наименование</dataPath>
+				<field>Наименование</field>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Предопределенный</dataPath>
+				<field>Предопределенный</field>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>ГоризонтальноеПоложение</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">БЛ=; БИ=Да</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ссылка</dataPath>
+				<field>Ссылка</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Полное имя</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ВнешниеПользователи</Type>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Пользователи</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Комментарий</dataPath>
+				<field>Комментарий</field>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Недействителен</dataPath>
+				<field>Недействителен</field>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>ГоризонтальноеПоложение</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">БЛ=; БИ=Да</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИдентификаторПользователяИБ</dataPath>
+				<field>ИдентификаторПользователяИБ</field>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">UUID</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЭтоВнешнийПользователь</dataPath>
+				<field>ЭтоВнешнийПользователь</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Это внешний пользователь</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>ГоризонтальноеПоложение</parameter>
+						<value xmlns:d7p1="http://v8.1c.ru/8.1/data/ui" xsi:type="d7p1:HorizontalAlign">Center</value>
+					</item>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">БЛ=; БИ=Да</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>БезПользователяИнформационнойБазы</dataPath>
+				<field>БезПользователяИнформационнойБазы</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Без пользователя информационной базы</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	Пользователи.Ссылка,
+	ЛОЖЬ КАК ЭтоВнешнийПользователь,
+	ВЫБОР
+		КОГДА Пользователи.ИдентификаторПользователяИБ В (&amp;ИдентификаторыНесуществующихПользователейИБ)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК БезПользователяИнформационнойБазы,
+	Пользователи.ПометкаУдаления,
+	Пользователи.Наименование,
+	Пользователи.ИдентификаторПользователяИБ,
+	Пользователи.Недействителен,
+	Пользователи.Комментарий,
+	Пользователи.Предопределенный
+ИЗ
+	Справочник.Пользователи КАК Пользователи
+ГДЕ
+	Пользователи.Служебный = ЛОЖЬ
+	И &amp;Пользователи
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВнешниеПользователи.Ссылка,
+	ИСТИНА,
+	ВЫБОР
+		КОГДА ВнешниеПользователи.ИдентификаторПользователяИБ В (&amp;ИдентификаторыНесуществующихПользователейИБ)
+			ТОГДА ИСТИНА
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ,
+	ВнешниеПользователи.ПометкаУдаления,
+	ВнешниеПользователи.Наименование,
+	ВнешниеПользователи.ИдентификаторПользователяИБ,
+	ВнешниеПользователи.Недействителен,
+	ВнешниеПользователи.Комментарий,
+	ВнешниеПользователи.Предопределенный
+ИЗ
+	Справочник.ВнешниеПользователи КАК ВнешниеПользователи
+ГДЕ
+	&amp;ВнешниеПользователи</query>
+		</dataSet>
+		<dataSet xsi:type="DataSetObject">
+			<name>КонтактнаяИнформация</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ссылка</dataPath>
+				<field>Ссылка</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Полное имя</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ВнешниеПользователи</Type>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Пользователи</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Телефон</dataPath>
+				<field>Телефон</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Телефон</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЭлектронныйАдрес</dataPath>
+				<field>ЭлектронныйАдрес</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Электронный адрес</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<objectName>КонтактнаяИнформация</objectName>
+		</dataSet>
+		<dataSetLink>
+			<sourceDataSet>Пользователи</sourceDataSet>
+			<destinationDataSet>ПользователиИБ</destinationDataSet>
+			<sourceExpression>ИдентификаторПользователяИБ</sourceExpression>
+			<destinationExpression>УникальныйИдентификатор</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>Пользователи</sourceDataSet>
+			<destinationDataSet>КонтактнаяИнформация</destinationDataSet>
+			<sourceExpression>Ссылка</sourceExpression>
+			<destinationExpression>Ссылка</destinationExpression>
+		</dataSetLink>
+		<parameter>
+			<name>ВнешниеПользователи</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Внешние пользователи</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+			</valueType>
+			<value xsi:type="xs:boolean">true</value>
+			<useRestriction>false</useRestriction>
+			<availableAsField>false</availableAsField>
+			<use>Always</use>
+		</parameter>
+		<parameter>
+			<name>Пользователи</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Пользователи</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+			</valueType>
+			<value xsi:type="xs:boolean">true</value>
+			<useRestriction>false</useRestriction>
+			<availableAsField>false</availableAsField>
+			<use>Always</use>
+		</parameter>
+		<parameter>
+			<name>ИдентификаторыНесуществующихПользователейИБ</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Идентификаторы несуществующих пользователей ИБ</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">UUID</Type>
+			</valueType>
+			<value xsi:type="xs:string"/>
+			<useRestriction>false</useRestriction>
+			<availableAsField>false</availableAsField>
+			<use>Always</use>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">СведенияОПользователяхИВнешнихПользователях</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Сведения о пользователях и внешних пользователях</d4p1:content>
+				</d4p1:item>
+			</presentation>
+		</settingsVariant>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">СведенияОПользователях</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Сведения о пользователях</d4p1:content>
+				</d4p1:item>
+			</presentation>
+		</settingsVariant>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">СведенияОВнешнихПользователях</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Сведения о внешних пользователях</d4p1:content>
+				</d4p1:item>
+			</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>СистемныеПоля.НомерПоПорядку</field>
+			<viewMode>Inaccessible</viewMode>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ЭтоВнешнийПользователь</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Ссылка</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Недействителен</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ПометкаУдаления</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВходВПрограммуРазрешен</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Имя</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>АутентификацияСтандартная</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ПоказыватьВСпискеВыбора</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ЗапрещеноИзменятьПароль</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>АутентификацияОС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ПользовательОС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>АутентификацияOpenID</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Язык</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>РежимЗапуска</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Комментарий</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Телефон</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ЭлектронныйАдрес</field>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>7139addb-6cc1-4f4b-ada6-47ed96031db6</userSettingID>
+	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Недействителен</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Недействительные</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>2fc6f1d8-ce85-45c1-8fc8-29b3e299b5f7</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ПометкаУдаления</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Помеченные на удаление</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>9800e27b-27de-4259-86c0-8d4595eb319a</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">БезПользователяИнформационнойБазы</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Без пользователя информационной базы</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>cb47e2ce-6928-43e4-b904-cbe4b2952e49</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ВходВПрограммуРазрешен</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вход в программу разрешен</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>8809ba69-2ea3-40bf-8e8b-82ab129baec6</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияСтандартная</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация стандартная</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>6590234e-cc10-4899-9e2d-f86867903a54</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияОС</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация ОС</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>19e3a1bb-4c84-420b-8a05-d3f78014fc1c</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияOpenID</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация OpenID</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>2b314b78-4b9a-41e9-bba0-bafdc8042eba</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Недействителен</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ПометкаУдаления</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">БезПользователяИнформационнойБазы</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ВходВПрограммуРазрешен</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияСтандартная</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ПоказыватьВСпискеВыбора</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ЗапрещеноИзменятьПароль</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияОС</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияOpenID</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>edb0415a-2b3b-48b7-8370-0f10583ef779</userSettingID>
+	</filter>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВнешниеПользователи</dcscor:parameter>
+			<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			<viewMode>Inaccessible</viewMode>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Пользователи</dcscor:parameter>
+			<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+		</dcscor:item>
+	</dataParameters>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Ссылка</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<use>false</use>
+			<field>Имя</field>
+			<orderType>Asc</orderType>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>93bb09e7-08be-4ee5-8849-07ad558cb266</userSettingID>
+	</order>
+	<conditionalAppearance>
+		<viewMode>Normal</viewMode>
+	</conditionalAppearance>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Заголовок</dcscor:parameter>
+			<dcscor:value xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения о пользователях и внешних пользователях</v8:content>
+				</v8:item>
+			</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+	<itemsViewMode>Normal</itemsViewMode>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>СистемныеПоля.НомерПоПорядку</field>
+			<viewMode>Inaccessible</viewMode>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Ссылка</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Недействителен</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ПометкаУдаления</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВходВПрограммуРазрешен</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Имя</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>АутентификацияСтандартная</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ПоказыватьВСпискеВыбора</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ЗапрещеноИзменятьПароль</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>АутентификацияОС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ПользовательОС</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>АутентификацияOpenID</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Язык</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>РежимЗапуска</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Комментарий</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Телефон</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ЭлектронныйАдрес</field>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>7139addb-6cc1-4f4b-ada6-47ed96031db6</userSettingID>
+	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Недействителен</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Недействительные</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>2fc6f1d8-ce85-45c1-8fc8-29b3e299b5f7</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ПометкаУдаления</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Помеченые на удаление</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>9800e27b-27de-4259-86c0-8d4595eb319a</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">БезПользователяИнформационнойБазы</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Без пользователя информационной базы</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>cb47e2ce-6928-43e4-b904-cbe4b2952e49</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ВходВПрограммуРазрешен</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вход в программу разрешен</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>8809ba69-2ea3-40bf-8e8b-82ab129baec6</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияСтандартная</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация стандартная</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>6590234e-cc10-4899-9e2d-f86867903a54</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияОС</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация ОС</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>19e3a1bb-4c84-420b-8a05-d3f78014fc1c</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияOpenID</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация OpenID</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>2b314b78-4b9a-41e9-bba0-bafdc8042eba</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Недействителен</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ПометкаУдаления</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">БезПользователяИнформационнойБазы</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ВходВПрограммуРазрешен</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияСтандартная</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ПоказыватьВСпискеВыбора</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ЗапрещеноИзменятьПароль</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияОС</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияOpenID</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>edb0415a-2b3b-48b7-8370-0f10583ef779</userSettingID>
+	</filter>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВнешниеПользователи</dcscor:parameter>
+			<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+			<viewMode>Inaccessible</viewMode>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Пользователи</dcscor:parameter>
+			<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+		</dcscor:item>
+	</dataParameters>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Ссылка</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<use>false</use>
+			<field>Имя</field>
+			<orderType>Asc</orderType>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>93bb09e7-08be-4ee5-8849-07ad558cb266</userSettingID>
+	</order>
+	<conditionalAppearance>
+		<viewMode>Normal</viewMode>
+	</conditionalAppearance>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Заголовок</dcscor:parameter>
+			<dcscor:value xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения о пользователях</v8:content>
+				</v8:item>
+			</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+	<itemsViewMode>Normal</itemsViewMode>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>СистемныеПоля.НомерПоПорядку</field>
+			<viewMode>Inaccessible</viewMode>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Ссылка</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Недействителен</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ПометкаУдаления</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВходВПрограммуРазрешен</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Имя</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>АутентификацияСтандартная</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>ЗапрещеноИзменятьПароль</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>АутентификацияOpenID</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Язык</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<use>false</use>
+			<field>Комментарий</field>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>7139addb-6cc1-4f4b-ada6-47ed96031db6</userSettingID>
+	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Недействителен</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Недействительные</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>2fc6f1d8-ce85-45c1-8fc8-29b3e299b5f7</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ПометкаУдаления</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Помеченые на удаление</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>9800e27b-27de-4259-86c0-8d4595eb319a</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">БезПользователяИнформационнойБазы</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Без пользователя информационной базы</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>cb47e2ce-6928-43e4-b904-cbe4b2952e49</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ВходВПрограммуРазрешен</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вход в программу разрешен</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>8809ba69-2ea3-40bf-8e8b-82ab129baec6</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияСтандартная</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация стандартная</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>6590234e-cc10-4899-9e2d-f86867903a54</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияOpenID</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация OpenID</v8:content>
+				</v8:item>
+			</presentation>
+			<viewMode>Normal</viewMode>
+			<userSettingID>2b314b78-4b9a-41e9-bba0-bafdc8042eba</userSettingID>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Недействителен</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ПометкаУдаления</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">БезПользователяИнформационнойБазы</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ВходВПрограммуРазрешен</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияСтандартная</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ЗапрещеноИзменятьПароль</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">АутентификацияOpenID</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:boolean">true</right>
+			<viewMode>Normal</viewMode>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>edb0415a-2b3b-48b7-8370-0f10583ef779</userSettingID>
+	</filter>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВнешниеПользователи</dcscor:parameter>
+			<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+			<viewMode>Inaccessible</viewMode>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Пользователи</dcscor:parameter>
+			<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+		</dcscor:item>
+	</dataParameters>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Ссылка</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<use>false</use>
+			<field>Имя</field>
+			<orderType>Asc</orderType>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>93bb09e7-08be-4ee5-8849-07ad558cb266</userSettingID>
+	</order>
+	<conditionalAppearance>
+		<viewMode>Normal</viewMode>
+	</conditionalAppearance>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Заголовок</dcscor:parameter>
+			<dcscor:value xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения о внешних пользователях</v8:content>
+				</v8:item>
+			</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+	<itemsViewMode>Normal</itemsViewMode>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
